@@ -7,14 +7,24 @@ public class LoanCalculator {
     /**
      * TODO: finish out this JavaDoc comment block.
      * FIXME: WHAT DOES THIS METHOD DO?
-     * 
-     * @param ???
-     * @return ???
+     *
+     * This method recieves a loan amount in the form of an int and then calculates the remaining after
+     * amount after 3 months and returns the final amount after 3 months
+     *
+     * @param ??? Parameter is the loan taken from the friend
+     * @return ??? Return will return the remaining loan amount from each month
      */
+
+
     static int getRemainingAmountIn3Months(int amount) {
         // TODO: Rewrite this method
-        return -1;
-    }
+        for (int i=0; i<3; i++){
+            amount -= amount*0.10;
+        }//end for loop
+
+        return amount;
+
+    }//end method
 
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
