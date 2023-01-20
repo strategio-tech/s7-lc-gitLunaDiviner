@@ -22,6 +22,8 @@ public class LoanCalculator {
             amount -= amount*0.10;
         }//end for loop
 
+        //testing blah blah blah
+
         return amount;
 
     }//end method
